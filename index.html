@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 1Q  DIFFERENCE BETWEEN == & ===-->
+<p> DIFFERENCE BETWEEN == & ===</p>
+    <pre>
+        BOTH ARE COMPARSION OPERATION THEY RETURN BULLEAN VALUES
+    * == (LOSIC EQUALITY)USED TO COMPARE THE VALUES
+    === (STRICT EQUALITY)IS USED TO COMPARE THE VALUES AND CHECK THE DATATYPE <br>
+var a=10
+var b=20
+a==b
+a===b
+console.log(false)
+console.log(true)
+    </pre>
+<!-- 2Q SPREAD OPERATOR -->
+<p>
+    sPREAD OPERATOR ALLOWS TO DESTRUCTURE THE NON PRIMITATIVE DATA TYPES 
+    like array and object 
+    copy of the code (...)
+    &rest operator removes the elemnts and give the rest of code 
+</p>
+<pre>
+    let arr3=[1,2,3,4,5,6]
+console.log(...arr3, "is spreading")
+let [firstelemnt,secondelemnt,...rest]=arr3
+console.log(rest)
+</pre>
+<p>
+    3 .DIFFERENCE BETWEEN var,let,const
+</p>
+<pre>
+    var= var is global value and we can reintilized the code
+    let=let is an private value but we cant reinitilized but we can update the values
+    const =const is an private level we cant reinitilized
+
+    
+</pre>
+<p>
+    4 
+    it is bigbox which contain memory and code  js is a synchronous single threated language.
+    memory is known as creation phase & code is an excution phase
+    below is the example for exution contest 
+</p>
+<pre>
+    var x=20
+console.log(x)
+function inside(){
+    console.log(x)
+    var x=30
+}
+inside();
+
+</pre>
+<p>
+    5.What is meant by first class functions ? <br>
+    1.function can assign to an variable, <br>
+    2. pass function as an argument
+</p>
+<pre>
+    let myfun=function(){
+        console.log("hello")
+    }
+    myfun();
+</pre>
+<p>
+    6Q. What are closures? Give an example of closure <br>
+    ans.1.A closure is the combination of a bundle enclosed with reference to state. <br>
+    2.closure gives acess to an outer function scoopes from an inside function <br>
+    3.When a function is declared inside another function then the child function can inherit the values from it's lexial parent function, this is known as closures in JS. Closures are created every time a function is created, at function creation time.
+</p>
+<pre>
+    function out(){
+        let abc="pavan";
+        function ins(){
+            console.log(abc)
+        }
+        ins();
+    }
+    out();
+</pre>
+<p>7.Explain call(), apply() and, bind() methods. Give an example of call(), apply(), bind() <br>
+</p>
+<li>Call is a method in function that helps us to replace the value of 'this' inside a function with whatever value we want. Some additional arguments can alse be given for the variables inside the function.</li>
+        <li>Apply is very similar to the call method. The only difference is that in apply we can pass an array as an argument list.</li>
+        <li>Bind is a method in function that helps us to create another function that we can execute later as per our requirement.</li>
+<script src="./main.js"></script>
+</body>
+</html>
